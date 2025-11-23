@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package note;
+option go_package = "./gRPC-server/proto;notepb";
+
+service NoteService {
+  rpc CreateNote(CreateNoteRequest) returns (CreateNoteResponse) {}
+}
+
+message CreateNoteRequest {
+  string user_id = 1;
+  string note_text = 2;
+}
+
+message CreateNoteResponse {
+  string note_id = 1;
+}
