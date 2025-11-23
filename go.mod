@@ -1,4 +1,4 @@
-module gRPC-server
+module github.com/Asylann/gRPC-server
 
 go 1.24.0
 
