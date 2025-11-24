@@ -2,15 +2,20 @@ package service
 
 import (
 	"context"
-	"gRPC-server/internal/model"
-	"gRPC-server/internal/repository"
-	notepb "gRPC-server/proto"
+	"github.com/Asylann/gRPC-server/internal/model"
+	"github.com/Asylann/gRPC-server/internal/repository"
+	notepb "github.com/Asylann/gRPC-server/proto"
 	"log"
 )
 
 type NoteService struct {
 	Repo repository.Repository
 	notepb.UnimplementedNoteServiceServer
+}
+
+func (noteService *NoteService) mustEmbedUnimplementedNoteServiceServer() {
+	//TODO implement me
+	panic("implement me")
 }
 
 func NewService(repository2 repository.Repository) *NoteService {

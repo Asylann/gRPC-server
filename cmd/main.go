@@ -2,10 +2,10 @@ package cmd
 
 import (
 	"context"
-	"gRPC-server/internal/repository"
-	kafka_local "gRPC-server/kafka-local"
-	notepb "gRPC-server/proto"
-	"gRPC-server/service"
+	"github.com/Asylann/gRPC-server/internal/repository"
+	kafka_local "github.com/Asylann/gRPC-server/kafka-local"
+	notepb "github.com/Asylann/gRPC-server/proto"
+	"github.com/Asylann/gRPC-server/service"
 	"google.golang.org/grpc"
 	"log"
 	"net"

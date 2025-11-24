@@ -2,7 +2,7 @@ package repository
 
 import (
 	"context"
-	"gRPC-server/internal/model"
+	"github.com/Asylann/gRPC-server/internal/model"
 )
 
 func (repo *Repository) CreateNote(ctx context.Context, note model.Note) (string, error) {

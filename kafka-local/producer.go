@@ -1,7 +1,7 @@
 package kafka_local
 
 import (
-	notepb "gRPC-server/proto"
+	notepb "github.com/Asylann/gRPC-server/proto"
 	"github.com/segmentio/kafka-go"
 	"golang.org/x/net/context"
 	"google.golang.org/protobuf/proto"
